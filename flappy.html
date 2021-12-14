@@ -1,0 +1,208 @@
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                margin: 0;
+                width: 100vw;
+                height: 100vh;
+                font-family: sans-serif;
+            }
+
+            .header, .footer {
+                background-color: rgba(0,0,0,0.8);
+                width: 100%;
+                height: 150px;
+                position: relative;
+            }
+
+            .custom-border {
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-image: url("images/border.png");
+                height: 7px;
+                width: 100%;
+                background-repeat: repeat-x;
+            }
+
+            .title {
+                color: cyan;
+                font-size: 36px;
+                font-weight: bold;
+                line-height: 150px;
+                position: relative;
+                display: inline-block;
+            }
+
+            .title > img {
+                position: absolute;
+                left: 60%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            .nav {
+                float: right;
+                display: flex;
+                width: 50%;
+                color: cyan;
+                font-size: 24px;
+                position: relative;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+            .nav > div {
+                border-bottom: 5px solid cyan;
+                padding: 0 15px;
+            }
+
+            .nav > div:nth-child(2) {
+                border-bottom: 5px solid white;
+            }
+
+            .scenery {
+                width: 100%;
+                border: 2px solid black;
+            }
+
+            .side-nav {
+                height: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                font-weight: bold;
+            }
+
+            .side-nav > div:first-child{
+                background-color: rgba(0,0,0,0.8);
+                flex-basis: 100%;
+                vertical-align: middle;
+                display: flex;   
+                align-items: center;
+                justify-content: center;
+                padding: 5px 0;
+                border: 1px solid rgba(0,0,0,0.5);
+                color: cyan;
+      
+            }
+
+            .side-nav > div:nth-child(n+2) {
+                background-color: cyan;
+                flex-basis: 100%;
+                vertical-align: middle;
+                display: flex;   
+                align-items: center;
+                justify-content: center;
+                padding: 5px 0;
+                border: 1px solid rgba(0,0,0,0.5);
+                color: rgba(0,0,0,0.8);
+            }
+
+            .white {
+                color: white;
+            }
+
+            .main-text {
+                font-size: 18px;
+                font-weight: bold;
+                color: rgba(0,0,0,0.8);
+            }
+
+            .footer-col {
+                color: cyan;
+                font-size: 16px;
+                font-weight: bold;
+                border-left: 3px solid cyan;
+                padding-left: 15px;
+            }
+
+            .footer {
+                height: auto;
+                padding-top: 3rem;
+                padding-bottom: 3rem;
+            }
+
+            .footer-msg {
+                background-color: cyan;
+                color: rgba(0,0,0,0.8);
+                font-size: 18px;
+                font-weight: bold;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <div class="custom-border"></div>
+            <div class="title">FLAPPY &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; APP
+                <img src="images/logo.png">
+            </div>
+            <div class="nav">
+                <div>ABOUT</div>
+                <div>SPECS</div>
+                <div>PRICING</div>
+                <div>CONTACT</div>
+                <div>SIGN UP</div>
+            </div>
+        </div>
+        <div class="container main">
+            <div class="row mt-5">
+                <div class="col-12 col-sm-8">
+                    <img class="scenery" src="images/scenery.png">
+                </div>
+                <div class="col-12 col-sm-4">
+                    <div class="side-nav">
+                        <div>FEATURES</div>
+                        <div><div class="white">&nbsp; 23 &nbsp; </div> DIFFERENT MODES</div>
+                        <div><div class="white">&nbsp; 500 &nbsp; </div> OPTIONS</div>
+                        <div>OVER <div class="white">&nbsp; 9000 &nbsp; </div> POINTS</div>
+                        <div><div class="white">&nbsp; 2X &nbsp; </div> THE FLAPPINESS OF V1</div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-text row mt-3">
+                <div class="col-12">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="custom-border"></div>
+            <div class="container">
+                <div class="row ">
+                    <div class="col-4 ">
+                        <div class="footer-col">ABOUT</div>
+                        <div class="footer-col">SPECS</div>
+                        <div class="footer-col">PRICING</div>
+                        <div class="footer-col">CONTACT</div>
+                        <div class="footer-col">SIGN UP</div>
+                    </div>
+                    <div class="col-4 ">
+                        <div class="footer-col">COMMERCIAL LICENCES</div>
+                        <div class="footer-col">EDUCATION</div>
+                        <div class="footer-col">CASE STUDIES</div>
+                        <div class="footer-col">DEVELOPER TOOLS</div>
+                        <div class="footer-col">DOCUMENTATION</div>
+                    </div>
+                    <div class="col-4 ">
+                        <div class="footer-col">TUTORIALS</div>
+                        <div class="footer-col">EVENTS</div>
+                        <div class="footer-col">BLOG</div>
+                        <div class="footer-col">SOCIAL MEDIA</div>
+                        <div class="footer-col">PARTNERS</div>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-12 footer-msg">
+                        2014 FLAPPY INC.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
